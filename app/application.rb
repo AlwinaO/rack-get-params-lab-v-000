@@ -18,7 +18,7 @@ class Application
       if @@cart.empty?
         resp.write "Your cart is empty"
       else
-        # binding.pry
+        binding.pry
         @@cart.each do |c|
           resp.write "#{c}"
         end
